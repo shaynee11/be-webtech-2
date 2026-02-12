@@ -1,0 +1,35 @@
+### GET STUDENTS
+GET http://localhost:8787/students
+
+### CREATE STUDENT
+POST http://localhost:8787/students 
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@example.com",
+  "age": 20,
+  "course": "BSIT",
+  "year_level": 3,
+  "gpa": 3.8,
+  "enrollment_status": "Active"
+}
+
+### UPDATE STUDENT
+PUT http://localhost:8787/students/3
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@example.com",
+  "age": 20,
+  "course": "Computer Science",
+  "year_level": 3,
+  "gpa": 1.9,
+  "enrollment_status": "Active"
+} 
+
+### DELETE STUDENT
+DELETE http://localhost:8787/students/2
